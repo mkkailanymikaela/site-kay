@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus objetivos do ano</title>
+</head>
+<body>
+   
+</body>
+</html>
+<section class="conteudo-principal">
+    <h2 class="titulo-principal">Meus Objetivos do ano_</h2>
+<div class="botoes">
+    <button class="botao">Cursos na Alura</button>
+    <button class="botao">Criar projetos em Javascript</button>
+    <button class="botao">Criar um portfolio</button>
+    <button class="botao">Atualizar meu currículo</button>
+</div>
+</section>
+<link rel="stylesheet" href="style.css">
+:root {
+    --cor-de-fundo: #1E1E1E;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
+}
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
+}
+<button class="botao ativo">Cursos na Alura</button>
+<button class="botao">Criar projetos em Javascript</button>
+<button class="botao">Criar um portfolio</button>
+<button class="botao">Atualizar meu currículo</button>
+<script src="main.js"></script>
+const botoes = document.querySelectorAll(".botao");
+console.log(botoes)
+for(let i=0; i <  botoes.length; i++){
+    console.log(i);
+}
+botoes[i].onclick = function(){
+    
+    botoes[i].classList.add("ativo");
+}
+for(let j=0;j<botoes.length;j++){
+    botoes[j].classList.remove("ativo");
+}
+const botoes = document.querySelectorAll(".botao");
+
+for(let i=0;i <botoes.length;i++){
+    botoes[i].onclick = function(){
+
+        for(let j=0;j<botoes.length;j++){
+            botoes[j].classList.remove("ativo");
+        }
+
+        botoes[i].classList.add("ativo");
+    }
+}
+<div class="abas-textos">
+    
+</div>
+<div class="abas-textos">
+    <div class="aba-conteudo">
+           
+    </div>
+</div>
+<div class="abas-textos">
+    <div class="aba-conteudo">
+        <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
+        <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+    </div>
+</div>
+<div class="abas-textos">
+    <div class="aba-conteudo">
+        <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
+        <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+    </div>
+    <div class="aba-conteudo">
+        <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
+        <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+    </div>
+    <div class="aba-conteudo">
+        <h3 class="aba-conteudo-titulo-principal">Criar um portfolio com os meus 3 melhores projetos</h3>
+        <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+    </div>
+    <div class="aba-conteudo">
+        <h3 class="aba-conteudo-titulo-principal">Atualizar meu curriculo com os certificados da Alura</h3>
+        <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+    </div>
+</div>
+.abas-textos{
+    background-color: var(--texto-fundo);
+}
+<div class="conteudo">
+    <div class="botoes">
+        <button class="botao ativo">Cursos na Alura</button>
+        <button class="botao">Criar projetos em Javascript</button>
+        <button class="botao">Criar um portfolio</button>
+        <button class="botao">Atualizar meu currículo</button>
+    </div>
+    <div class="abas-textos">
+        <div class="aba-conteudo">
+            <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
+            <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+        </div>
+        <div class="aba-conteudo">
+            <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
+            <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+        </div>
+        <div class="aba-conteudo">
+            <h3 class="aba-conteudo-titulo-principal">Criar um portfolio com os meus 3 melhores projetos</h3>
+            <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+        </div>
+        <div class="aba-conteudo">
+            <h3 class="aba-conteudo-titulo-principal">Atualizar meu curriculo com os certificados da Alura</h3>
+            <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+        </div>
+    </div>
+</div>
+const botoes = document.querySelectorAll(".botao");
+const textos = document.querySelectorAll(".aba-conteudo");
+botoes[i].classList.add("ativo");
+textos[i].classList.add("ativo");
+botoes[j].classList.remove("ativo");
+textos[j].classList.remove("ativo");
+for (let i = 0; i < botoes.length; i++) {
+    botoes[i].onclick = function () {
+
+        for (let j = 0; j < botoes.length; j++) {
+            botoes[j].classList.remove("ativo");
+            textos[j].classList.remove("ativo");
+        }
+
+        botoes[i].classList.add("ativo");
+        textos[i].classList.add("ativo");
+    }
+}
+<div class="aba-conteudo ativo">
+    <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
+    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+    <div class="contador"></div>
+</div>
+<div class="aba-conteudo ativo">
+    <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
+    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+    <div class="contador"></div>
+</div>
+<div class="aba-conteudo">
+    <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
+    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+    <div class="contador"></div>
+</div>
+<div class="aba-conteudo">
+    <h3 class="aba-conteudo-titulo-principal">Criar um portfolio com os meus 3 melhores projetos</h3>
+    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+    <div class="contador"></div>
+</div>
+<div class="aba-conteudo">
+    <h3 class="aba-conteudo-titulo-principal">Atualizar meu currículo com os certificados da Alura</h3>
+    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+    <div class="contador"></div>
+</div>
+const contadores = document.querySelectorAll(".contador");
+const tempoObjetivo1 = new Date("2024-10-05");
+
+contadores[0].textContent = tempoObjetivo1;
+let tempoAtual = new Date();
+contadores[0].textContent = calculaTempo(tempoObjetivo1);
+let segundos = Math.floor(tempoFinal / 1000);
+let minutos = Math.floor(segundos / 60);
+let horas = Math.floor(minutos / 60);
+let dias = Math.floor(horas / 24);
+return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+segundos %= 60;
+minutos %= 60;
+horas %= 24;
+<div class="contador">
+    <p>Olá contador</p>
+</div>		
+//comecaCronometro();
+<div class="contador">
+    <div class="contador-digito">
+        
+    </div>
+</div>
+<div class="contador">
+    <div class="contador-digito">
+        <p class="contador-digito-numero">7</p>
+        <p class="contador-digito-texto">dias</p>
+    </div>
+</div>
+<div class="contador">
+    <div class="contador-digito">
+        <p class="contador-digito-numero">7</p>
+        <p class="contador-digito-texto">dias</p>
+    </div>
+    <div class="contador-digito">
+        <p class="contador-digito-numero">7</p>
+        <p class="contador-digito-texto">horas</p>
+    </div>
+    <div class="contador-digito">
+        <p class="contador-digito-numero">7</p>
+        <p class="contador-digito-texto">min</p>
+    </div>
+    <div class="contador-digito">
+        <p class="contador-digito-numero">7</p>
+        <p class="contador-digito-texto">seg</p>
+    </div>
+</div>
+.contador{
+    display: flex;
+    justify-content: center;
+}
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+}
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+}
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+}
+.contador{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+<div class="contador">
+    <div class="contador-digito">
+        <p class="contador-digito-numero">7</p>
+        <p class="contador-digito-texto">dias</p>
+    </div>
+    <div class="contador-digito">
+        <p class="contador-digito-numero">7</p>
+        <p class="contador-digito-texto">horas</p>
+    </div>
+    <div class="contador-digito">
+        <p class="contador-digito-numero">7</p>
+        <p class="contador-digito-texto">min</p>
+    </div>
+    <div class="contador-digito">
+        <p class="contador-digito-numero">7</p>
+        <p class="contador-digito-texto">seg</p>
+    </div>
+</div>
+<div class="contador">
+    <div class="contador-digito">
+        <p class="contador-digito-numero" id="dias0">7</p>
+        <p class="contador-digito-texto">dias</p>
+    </div>
+    <div class="contador-digito">
+        <p class="contador-digito-numero" id="horas0">7</p>
+        <p class="contador-digito-texto">horas</p>
+    </div>
+    <div class="contador-digito">
+        <p class="contador-digito-numero" id="min0">7</p>
+        <p class="contador-digito-texto">min</p>
+    </div>
+    <div class="contador-digito">
+        <p class="contador-digito-numero" id="seg0">7</p>
+        <p class="contador-digito-texto">seg</p>
+    </div>
+</div>
+<div class="aba-conteudo ativo">
+    <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
+    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+    <div class="contador">
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="dias0">7</p>
+            <p class="contador-digito-texto">dias</p>
+        </div>
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="horas0">7</p>
+            <p class="contador-digito-texto">horas</p>
+        </div>
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="min0">7</p>
+            <p class="contador-digito-texto">min</p>
+        </div>
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="seg0">7</p>
+            <p class="contador-digito-texto">seg</p>
+        </div>
+    </div>
+</div>
+<div class="aba-conteudo">
+    <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
+    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+    <div class="contador">
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="dias1">7</p>
+            <p class="contador-digito-texto">dias</p>
+        </div>
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="horas1">7</p>
+            <p class="contador-digito-texto">horas</p>
+        </div>
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="min1">7</p>
+            <p class="contador-digito-texto">min</p>
+        </div>
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="seg1">7</p>
+            <p class="contador-digito-texto">seg</p>
+        </div>
+    </div>
+</div>
+<div class="aba-conteudo">
+    <h3 class="aba-conteudo-titulo-principal">Criar um portfolio com os meus 3 melhores projetos</h3>
+    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+    <div class="contador">
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="dias2">7</p>
+            <p class="contador-digito-texto">dias</p>
+        </div>
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="horas2">7</p>
+            <p class="contador-digito-texto">horas</p>
+        </div>
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="min2">7</p>
+            <p class="contador-digito-texto">min</p>
+        </div>
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="seg2">7</p>
+            <p class="contador-digito-texto">seg</p>
+        </div>
+    </div>
+</div>
+<div class="aba-conteudo">
+    <h3 class="aba-conteudo-titulo-principal">Atualizar meu curriculo com os certificados da Alura</h3>
+    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+    <div class="contador">
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="dias3">7</p>
+            <p class="contador-digito-texto">dias</p>
+        </div>
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="horas3">7</p>
+            <p class="contador-digito-texto">horas</p>
+        </div>
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="min3">7</p>
+            <p class="contador-digito-texto">min</p>
+        </div>
+        <div class="contador-digito">
+            <p class="contador-digito-numero" id="seg3">7</p>
+            <p class="contador-digito-texto">seg</p>
+        </div>
+    </div>
+</div>
+comecaCronometro();
+function atualizaCronometro(){
+       
+    for (let i=0; i<contadores.length;i++){
+        //contadores[i].textContent = calculaTempo(tempos[i]);   
+    }
+}
+if (tempoFinal > 0){
+    return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+} else {
+    return [0,0,0,0];
+}
+function atualizaCronometro(){ 
+    document.getElementById("dias0").textContent = calculaTempo(tempos[0]);  
+    for (let i=0; i<contadores.length;i++){
+        //contadores[i].textContent = calculaTempo(tempos[i]);   
+    }
+}
+function atualizaCronometro(){ 
+    document.getElementById("dias0").textContent = calculaTempo(tempos[0])[0];  
+    for (let i=0; i<contadores.length;i++){
+        //contadores[i].textContent = calculaTempo(tempos[i]);   
+    }
+}
+function atualizaCronometro(){ 
+    document.getElementById("dias0").textContent = calculaTempo(tempos[0])[0];
+    document.getElementById("horas0").textContent = calculaTempo(tempos[0])[1];  
+    document.getElementById("min0").textContent = calculaTempo(tempos[0])[2];
+    document.getElementById("seg0").textContent = calculaTempo(tempos[0])[3];
+    for (let i=0; i<contadores.length;i++){
+        //contadores[i].textContent = calculaTempo(tempos[i]);   
+    }
+}
+function atualizaCronometro(){ 
+    document.getElementById("dias0").textContent = calculaTempo(tempos[1])[0];
+    document.getElementById("horas0").textContent = calculaTempo(tempos[1])[1];  
+    document.getElementById("min0").textContent = calculaTempo(tempos[1])[2];
+    document.getElementById("seg0").textContent = calculaTempo(tempos[1])[3];
+    for (let i=0; i<contadores.length;i++){
+        //contadores[i].textContent = calculaTempo(tempos[i]);   
+    }
+}
+function calculaTempo(tempoObjetivo) {
+    let tempoAtual = new Date();
+    let tempoFinal = tempoObjetivo - tempoAtual;
+    let segundos = Math.floor(tempoFinal / 1000);
+    let minutos = Math.floor(segundos / 60);
+    let horas = Math.floor(minutos / 60);
+    let dias = Math.floor(horas / 24);
+
+    segundos %= 60;
+    minutos %= 60;
+    horas %= 24;
+    if (tempoFinal > 0){
+        return [dias,horas,minutos,segundos]
+    } else {
+        return [0,0,0,0];
+    }
+}
+document.getElementById("seg0").textContent = calculaTempo(tempos[0])[3];
+document.getElementById("seg1").textContent = calculaTempo(tempos[1])[3];
+document.getElementById("seg2").textContent = calculaTempo(tempos[2])[3];
+document.getElementById("seg3").textContent = calculaTempo(tempos[3])[3];
+for (let i=0; i < tempos.length; i++){
+    document.getElementById("seg"+i).textContent = calculaTempo(tempos[i])[3];
+}
+for (let i=0; i<contadores.length;i++){
+    document.getElementById("dias"+i).textContent = calculaTempo(tempos[i])[0];
+    document.getElementById("horas"+i).textContent = calculaTempo(tempos[i])[1];
+    document.getElementById("min"+i).textContent = calculaTempo(tempos[i])[2];
+    document.getElementById("seg"+i).textContent = calculaTempo(tempos[i])[3];
+}
